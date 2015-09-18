@@ -1,45 +1,88 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Jobs</h1>
+<center>
+<h1>Current Jobs</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Job title</th>
-      <th>Company</th>
-      <th>Job found at</th>
-      <th>Date applied</th>
-      <th>Employer response date</th>
-      <th>Salary bool</th>
-      <th>Salary if known</th>
-      <th>Hourly wage bool</th>
-      <th>Hourly wage amount</th>
-      <th>Salary amount</th>
-      <th>Interview one</th>
-      <th>Interview two</th>
-      <th>Interview three</th>
-      <th>Job notes</th>
-      <th colspan="3"></th>
+      <th>Jobs List</th>
     </tr>
   </thead>
 
   <tbody>
     <% @jobs.each do |job| %>
       <tr>
+        <td>Job Title</td>
         <td><%= job.job_title %></td>
+      </tr>
+     
+      <tr>
+        <td>Company</td>
         <td><%= job.company %></td>
+      </tr>
+
+      <tr>
+        <td>Location Found</td>
         <td><%= job.job_found_at %></td>
+      </tr>
+
+      <tr>
+        <td>Date Applied</td>
         <td><%= job.date_applied %></td>
+      </tr>
+
+      <tr>
+        <td>Employer Response Date</td>
         <td><%= job.employer_response_date %></td>
+      </tr>
+
+      <tr>
+        <td>Job is Salary?</td>      
         <td><%= job.salary_bool %></td>
+      </tr>
+
+      <tr>
+        <td>Salary</td>
         <td><%= job.salary_if_known %></td>
+      </tr>
+
+      <tr>
+        <td>Hourly Wage Job?</td>
         <td><%= job.hourly_wage_bool %></td>
+      </tr>
+
+      <tr>
+        <td>Hourly Wage</td>
         <td><%= job.hourly_wage_amount %></td>
+      </tr>
+
+      <tr>
+        <td>Salary Amount</td>
         <td><%= job.salary_amount %></td>
+      </tr> 
+
+      <tr>
+        <td>First Interview?</td>
         <td><%= job.interview_one %></td>
+      </tr>
+
+      <tr>
+        <td>Second Interview?</td>
         <td><%= job.interview_two %></td>
+      </tr>
+
+      <tr>
+        <td>Third Interview?</td>
         <td><%= job.interview_three %></td>
+      </tr> 
+
+      <tr>
+        <td>Notes</td>
         <td><%= job.job_notes %></td>
+     </tr>
+
+      <tr>
         <td><%= link_to 'Show', job %></td>
         <td><%= link_to 'Edit', edit_job_path(job) %></td>
         <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -50,4 +93,6 @@
 
 <br>
 
+
 <%= link_to 'New Job', new_job_path %>
+</center>
