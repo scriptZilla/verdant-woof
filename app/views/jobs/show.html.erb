@@ -1,0 +1,74 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Job title:</strong>
+  <%= @job.job_title %>
+</p>
+
+<p>
+  <strong>Company:</strong>
+  <%= @job.company %>
+</p>
+
+<p>
+  <strong>Job found at:</strong>
+  <%= @job.job_found_at %>
+</p>
+
+<p>
+  <strong>Date applied:</strong>
+  <%= @job.date_applied %>
+</p>
+
+<p>
+  <strong>Employer response date:</strong>
+  <%= @job.employer_response_date %>
+</p>
+
+<p>
+  <strong>Salary bool:</strong>
+  <%= @job.salary_bool %>
+</p>
+
+<p>
+  <strong>Salary if known:</strong>
+  <%= @job.salary_if_known %>
+</p>
+
+<p>
+  <strong>Hourly wage bool:</strong>
+  <%= @job.hourly_wage_bool %>
+</p>
+
+<p>
+  <strong>Hourly wage amount:</strong>
+  <%= @job.hourly_wage_amount %>
+</p>
+
+<p>
+  <strong>Salary amount:</strong>
+  <%= @job.salary_amount %>
+</p>
+
+<p>
+  <strong>Interview one:</strong>
+  <%= @job.interview_one %>
+</p>
+
+<p>
+  <strong>Interview two:</strong>
+  <%= @job.interview_two %>
+</p>
+
+<p>
+  <strong>Interview three:</strong>
+  <%= @job.interview_three %>
+</p>
+
+<p>
+  <strong>Job notes:</strong>
+  <%= @job.job_notes %>
+</p>
+
+<%= link_to 'Edit', edit_job_path(@job) %> |
+<%= link_to 'Back', jobs_path %>

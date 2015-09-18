@@ -1,0 +1,53 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Jobs</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Job title</th>
+      <th>Company</th>
+      <th>Job found at</th>
+      <th>Date applied</th>
+      <th>Employer response date</th>
+      <th>Salary bool</th>
+      <th>Salary if known</th>
+      <th>Hourly wage bool</th>
+      <th>Hourly wage amount</th>
+      <th>Salary amount</th>
+      <th>Interview one</th>
+      <th>Interview two</th>
+      <th>Interview three</th>
+      <th>Job notes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @jobs.each do |job| %>
+      <tr>
+        <td><%= job.job_title %></td>
+        <td><%= job.company %></td>
+        <td><%= job.job_found_at %></td>
+        <td><%= job.date_applied %></td>
+        <td><%= job.employer_response_date %></td>
+        <td><%= job.salary_bool %></td>
+        <td><%= job.salary_if_known %></td>
+        <td><%= job.hourly_wage_bool %></td>
+        <td><%= job.hourly_wage_amount %></td>
+        <td><%= job.salary_amount %></td>
+        <td><%= job.interview_one %></td>
+        <td><%= job.interview_two %></td>
+        <td><%= job.interview_three %></td>
+        <td><%= job.job_notes %></td>
+        <td><%= link_to 'Show', job %></td>
+        <td><%= link_to 'Edit', edit_job_path(job) %></td>
+        <td><%= link_to 'Destroy', job, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Job', new_job_path %>

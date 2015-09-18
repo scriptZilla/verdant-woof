@@ -1,0 +1,33 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  job_title: MyString
+  company: MyString
+  job_found_at: MyString
+  date_applied: 2015-09-18
+  employer_response_date: 2015-09-18
+  salary_bool: false
+  salary_if_known: false
+  hourly_wage_bool: false
+  hourly_wage_amount: 1.5
+  salary_amount: 1
+  interview_one: MyString
+  interview_two: MyString
+  interview_three: MyString
+  job_notes: MyText
+
+two:
+  job_title: MyString
+  company: MyString
+  job_found_at: MyString
+  date_applied: 2015-09-18
+  employer_response_date: 2015-09-18
+  salary_bool: false
+  salary_if_known: false
+  hourly_wage_bool: false
+  hourly_wage_amount: 1.5
+  salary_amount: 1
+  interview_one: MyString
+  interview_two: MyString
+  interview_three: MyString
+  job_notes: MyText
